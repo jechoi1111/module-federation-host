@@ -23,13 +23,13 @@ module.exports = {
         name: 'webpack_host',
         remotes: {
             webpack_remote: `webpack_remote@http://localhost:3000/remoteEntry.js`,
-            // remote_host: 'remote_host@http://localhost:2000/remoteEntry.js'
+            remote_host: `remote_host@http://localhost:2000/remoteEntry.js`,
         },
-            shared: {
-                react: {singleton: true},
-                "react-dom": {singleton: true},
-                // zustand: {singleton: true}
-            },
+        shared: {
+            react: {singleton: true},
+            "react-dom": {singleton: true},
+            zustand: {singleton: true}
+        },
     })],
     module: {
         rules: [
